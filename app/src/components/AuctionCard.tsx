@@ -45,7 +45,7 @@ export function AuctionCard({ title, startDate, endDate, img, currentBid, ...pro
       />
       <Card.Footer mt="$4" p="$2" backgroundColor="$backgroundFocus" borderBottomLeftRadius="$2" borderBottomRightRadius="$2">
         <YStack space="$1" flexGrow={1}>
-          <SizableText size="$5" fontWeight="bold">{title}</SizableText>
+          <SizableText size="$5" fontWeight="bold" numberOfLines={1} style={{ maxWidth: 150 }}>{title}</SizableText>
           {currentBid &&
             <XStack ai="center" jc="space-between">
               <SizableText size="$3" fontWeight="bold">Highest Bid:</SizableText>

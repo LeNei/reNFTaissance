@@ -1,4 +1,4 @@
-import { Card, H2, Image, XStack, YStack, Paragraph, H4, H3, YGroup, ListItem, Separator, Button } from "tamagui";
+import { Card, H2, Image, XStack, YStack, Paragraph, H4, H3, YGroup, ListItem, Separator } from "tamagui";
 import { BaseScreen } from "../components/layout";
 import { BidButton, Countdown } from '../components';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -45,13 +45,13 @@ export function Auction({ navigation }: any) {
               source={{
                 width: 300,
                 height: 300,
-                uri: "https://www.nicepng.com/png/detail/965-9651318_download-10-selected-gold-coins-png-images-with.png"
+                uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Fugio_cent.jpg/330px-Fugio_cent.jpg"
               }}
             />
           </Card>
-          <H2 mt="$4" style={{ fontFamily: "SilkScreen" }}>Auction 1</H2>
+          <H2 mt="$4" mb="$1" style={{ fontFamily: "SilkScreen" }}>Fugio cent, 1787</H2>
           <BidButton />
-          <XStack>
+          <XStack mt="$1">
             <H3>Highest bid: </H3>
             <H3 theme="alt2" style={{ fontFamily: "SilkScreen" }} ml="$4">12.032 ETH</H3>
           </XStack>
